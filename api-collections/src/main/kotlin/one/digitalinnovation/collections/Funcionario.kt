@@ -1,13 +1,11 @@
 package one.digitalinnovation.collections
 
-data class Funcionario(
-    val nome: String,
-    val salario: Double,
-    val tipoContratacao: String
-) {
-    override fun toString(): String =
-        """
-            Nome:    $nome
-            Salário: $salario
-        """.trimIndent()
+import java.math.BigDecimal
+
+class Funcionario (
+    nome: String,
+    cpf: String,
+    val salario: BigDecimal
+): Pessoa ( nome,cpf) {
+
 }
